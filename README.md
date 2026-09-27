@@ -1,39 +1,31 @@
-# Codeforces Problem Solutions
+# Codeforces solutions
 
-Welcome to my repository containing solutions to Codeforces problems in C++! Here you'll find my solutions to various Codeforces problems along with explanations and approaches.
+202 accepted solutions to [Codeforces](https://codeforces.com) problems, written in C++ and collected in early 2024 while I practised algorithms and data structures.
 
-## Table of Contents
+## Layout
 
-- [About](#about)
-- [Getting Started](#getting-started)
-- [Contributing](#contributing)
-- [License](#license)
+Solutions are grouped by the compiler they were submitted with, then by problem:
 
-## About
+```
+CodeForces/
+  C++17 (GCC 7-32)/      33 solutions
+  C++20 (GCC 11-64)/    169 solutions
+    1490A | Dense Array/
+      250874220.cpp      the accepted submission (named by submission id)
+      __info.txt         problem name and a link to the statement
+```
 
-This repository contains my solutions to Codeforces problems. Each solution is implemented in ```C++20```.
+The folder name starts with the contest number and problem letter, so `1490A` is [problem A of contest 1490](https://codeforces.com/contest/1490/problem/A).
 
-## Getting Started
+## Running a solution
 
-To get started, simply clone this repository to your local machine:
+Each file is a complete program that reads from standard input:
 
-```bash```
-git clone https://github.com/your_username/Codeforces-Solutions.git
+```bash
+g++ -std=c++20 -O2 "CodeForces/C++20 (GCC 11-64)/<problem>/<submission>.cpp" -o solution
+./solution < input.txt
+```
 
-### Problem Solutions Repository
+Use `-std=c++17` for the files in the C++17 folder.
 
-This repository contains solutions to various problems, each stored in its own directory named after the problem's ID and Name. Inside each directory, you will find the C++ source file containing the solution code along with a text file containing link to the problem.
-
-## Contributing
-
-If you'd like to contribute to this repository by adding more solutions or improving existing ones, feel free to open a pull request. Contributions are highly appreciated!
-
-1. Fork this repository.
-2. Create a new branch: `git checkout -b feature/new-solution`.
-3. Make your changes and commit them: `git commit -am 'Add new solution'`.
-4. Push to the branch: `git push origin feature/new-solution`.
-5. Submit a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Built by [Sujan Rokad](https://sujanrokad.com).
